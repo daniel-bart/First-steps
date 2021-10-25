@@ -9,7 +9,7 @@ int main(int argc, char** argv)
     InitializeMagick(*argv);
     Image image;
     try {
-        image.read("E:/Projects/ASCII-Art/pineapple.jpg");
+        image.read("Path to Picture");
         Geometry newSize = Geometry(175, 115);
         image.resize(newSize);
         cout << "Successfully loaded image!" << endl;
